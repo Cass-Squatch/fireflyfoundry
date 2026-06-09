@@ -1,0 +1,201 @@
+/* ════════════════════════════
+   SORT BAR
+════════════════════════════ */
+
+.sort-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0 0 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(232, 212, 138, 0.2);
+}
+
+.sort-bar__filters,
+.sort-bar__sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.6rem;
+}
+
+.sort-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding: 0.2rem 0.3rem;
+  transition: color 0.2s;
+}
+
+.sort-btn:hover {
+  color: var(--gold);
+}
+
+.sort-btn.active {
+  color: var(--gold);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sort-bar__sort .sort-btn {
+  font-size: 0.65rem;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(232, 212, 138, 0.15);
+  padding: 0.2rem 0.55rem;
+}
+
+.sort-bar__sort .sort-btn.active {
+  border-color: rgba(232, 212, 138, 0.45);
+}
+
+
+/* ════════════════════════════
+   REVIEW LIST
+════════════════════════════ */
+
+.review-list {
+  margin-top: 0;
+}
+
+.review-entry {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid rgba(232, 212, 138, 0.1);
+  transition: border-color 0.2s;
+}
+
+.review-entry:first-child {
+  border-top: 1px solid rgba(232, 212, 138, 0.1);
+}
+
+.review-entry:hover {
+  border-bottom-color: rgba(232, 212, 138, 0.3);
+}
+
+.review-entry:hover .review-entry__title {
+  color: var(--gold);
+}
+
+.review-entry__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.review-entry__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.review-entry__stars {
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.review-entry__meta {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.7;
+  margin-top: 0.3rem;
+}
+
+.review-entry__summary {
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
+
+/* ════════════════════════════
+   INDIVIDUAL REVIEW PAGE
+════════════════════════════ */
+
+.review-back {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  transition: color 0.2s;
+}
+
+.review-back:hover {
+  color: var(--gold);
+}
+
+.review-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(232, 212, 138, 0.15);
+}
+
+.review-book-title {
+  font-family: 'CloisterBlack', cursive;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  color: #ede0c0;
+  filter: url(#rough);
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+}
+
+.review-book-meta {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.review-stars {
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+}
+
+.review-summary {
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.review-body {
+  max-width: 680px;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.review-body p + p {
+  margin-top: 1.4em;
+}

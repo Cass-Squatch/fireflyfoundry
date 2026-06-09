@@ -1,0 +1,137 @@
+[
+  {
+    "id": "earthlight",
+    "title": "Earthlight",
+    "stanzas": [
+      [
+        "Waters flowing backwards to",
+        "A cascade falling, falling up",
+        "Insides twisting, twisting out",
+        "Pouring out an empty cup"
+      ],
+      [
+        "Inwards like a neutron star",
+        "Drawing ever, ever in",
+        "Into darkness, darkness shines",
+        "A river bright with starry sin"
+      ],
+      [
+        "Háides watch my barefoot step",
+        "Send me dancing, dancing round",
+        "Whisper, whisper lovely lies",
+        "Carry me under the gound"
+      ],
+      [
+        "Childhood in amber crown,",
+        "Aging, aging fairy wine",
+        "Stars like fires, fires burning",
+        "Still in sight beneath the brine"
+      ],
+      [
+        "Give your hand and take my fear",
+        "Ever failing, failing you",
+        "Cloak my hair in sunrise, sunrise",
+        "Fill my cup with morning dew"
+      ],
+      [
+        "Offering my hollow hands",
+        "Singing, singing silent hymns",
+        "To my echo listen, listen",
+        "Into earthlight starlight dims"
+      ]
+    ],
+    "font": "Cormorant Garamond",
+    "background": "url('../images/underwater_francesco-ungaro.jpg') center/cover",
+    "color": "#e8d48a",
+    "overlay": false,
+    "credit": "Photo: Francesco Ungaro via Upsplash, with edits"
+  },
+  {
+    "id": "mothersmilk",
+    "title": "Mother's Milk",
+    "stanzas": [
+      [
+        "You take such comfort at my breast.",
+        "Little sighs and sleepy eyes.",
+        "When I hold you close, we are safe",
+        "In a woolen world that's only ours,",
+        "Knitted just for us in my womb."
+      ],
+      [
+        "But I worry sometimes if you're drinking my sorrows.",
+        "If I'm passing it on like a virus."
+      ],
+      [
+        "Does it smell like my grandma's home",
+        "Or pencil shavings?",
+        "Does it taste like my father's brand of whiskey?",
+        "Does it bring you visions of everyone who never got to hold you?",
+        "Will you wake up one day, belly full, and forget how to dream?"
+      ],
+      [
+        "All around me are women who break curses.",
+        "My mother and my cousin and my sister",
+        "All have crushed the head of their serpent,",
+        "Watched it spit its tail out its mouth.",
+        "But my curse lives inside me, buried in my skin",
+        "The way shrapnel gets absorbed",
+        "And festers."
+      ],
+      [
+        "There is no serpent to crush.",
+        "There is no enemy at all.",
+        "Just this dark thing in me that I hope you cannot taste."
+      ],
+      [
+        "I hope it passes you like a shadow on the wall",
+        "Or a snake in the grass",
+        "But if it does find you",
+        "If you feel it squirming in places you cannot reach",
+        "I'll be there."
+      ],
+      [
+        "After all,",
+        "Women in my family are great at breaking curses."
+      ]
+    ],
+    "font": "Cormorant Garamond",
+    "background": "url('../images/shadowsnake_pornnaphat-suttiapiruk.jpg') center/cover",
+    "color": "#e8d48a",
+    "overlay": true,
+    "credit": "Photo: Pornnaphat Suttiapiruk via Upsplash, with edits"
+  },
+  {
+    "id": "softhands",
+    "title": "Soft Hands",
+    "stanzas": [
+      [
+        "Too frail for the mountain",
+        "Too fair for the sand",
+        "Trying to catch moonlight in the palm of my hand"
+      ],
+      [
+        "Too clever to coast",
+        "Too careless to climb",
+        "They don't pay you to love on company time"
+      ],
+      [
+        "They tore out the meadow",
+        "They spilled out the oil",
+        "They told me my skin was too soft for the soil",
+        "The fireflies fade",
+        "The trees turn to bone",
+        "The flesh on my hands has turned harder than stone"
+      ],
+      [
+        "Too scared to live",
+        "Too scared to die",
+        "Dancing too slow in the hurricane's eye"
+      ]
+    ],
+    "font": "Cormorant Garamond",
+    "background": "url('../images/dance2.jpg') center/cover",
+    "color": "#e8d48a",
+    "overlay": true,
+    "credit":"Photo: Alexander Mass via Upsplash, with edits"
+  }
+]

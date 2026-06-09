@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potions! — The Firefly Foundry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../recipes.css">
+</head>
+<body class="recipes-page">
+  <div class="page-grid page-grid--subpage">
+    <nav class="side-nav">
+      <ul>
+        <li><a href="../../index.html" class="nav-link">Home</a></li>
+        <li><a href="../../About/about.html" class="nav-link">About</a></li>
+        <li><a href="../../Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+        <li><a href="../../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="../../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      </ul>
+    </nav>
+    <header class="subpage-hero">
+      <p class="site-name"><a href="../../index.html">The Firefly Foundry</a></p>
+      <h1 class="subpage-title">Recipes</h1>
+    </header>
+    <nav class="side-nav side-nav--right">
+      <ul>
+        <li><a href="../../Commonplace/commonplace.html" class="nav-link">Commonplace Book</a></li>
+        <li><a href="../../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+        <li><a href="../../Generators/generators.html" class="nav-link">Generators</a></li>
+        <li><a href="../../Garden/garden.html" class="nav-link">Garden</a></li>
+        <li><a href="../../Recipes/recipes.html" class="nav-link active">Recipes</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main class="subpage-content">
+    <div class="subpage-content__inner">
+      <a href="../recipes.html" class="recipe-back">&larr; Recipes</a>
+      <div class="recipe-entry-header">
+        <h1 class="recipe-entry-title">Potions!</h1>
+        <p class="recipe-entry-meta"><span>Drinks</span> &middot; 5 min &middot; Easy</p>
+      </div>
+      <div class="recipe-body">
+        <section class="recipe-ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Your ingredients here</li>
+          </ul>
+        </section>
+        <section class="recipe-instructions">
+          <h2>Instructions</h2>
+          <ol>
+            <li>Your instructions here.</li>
+          </ol>
+        </section>
+      </div>
+      <div class="recipe-notes">
+        <p>Notes, variations, and tips go here.</p>
+      </div>
+    </div>
+  </main>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="../../index.html" class="nav-link">Home</a></li>
+      <li><a href="../../About/about.html" class="nav-link">About</a></li>
+      <li><a href="../../Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+      <li><a href="../../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="../../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      <li><a href="../../Commonplace/commonplace.html" class="nav-link">Commonplace Book</a></li>
+      <li><a href="../../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+      <li><a href="../../Generators/generators.html" class="nav-link">Generators</a></li>
+      <li><a href="../../Garden/garden.html" class="nav-link">Garden</a></li>
+      <li><a href="../../Recipes/recipes.html" class="nav-link active">Recipes</a></li>
+    </ul>
+  </nav>
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="rough" x="-5%" y="-10%" width="110%" height="130%">
+        <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="4" seed="8" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+  <script src="../../script.js"></script>
+</body>
+</html>

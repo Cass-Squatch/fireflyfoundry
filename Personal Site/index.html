@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Firefly Foundry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-grid">
+
+    <!-- Left column: nav -->
+    <nav class="side-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="About/about.html" class="nav-link">About</a></li>
+        <li><a href="Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+        <li><a href="Reviews/reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      </ul>
+    </nav>
+
+    <!-- Center column: hero -->
+    <main class="hero">
+      <h1 class="hero-title">
+        <span class="ornament"></span> The Firefly Foundry<br>
+        <span class="ornament"></span>
+      </h1>
+      <p class="hero-subtitle">Rhymes, Reviews, and Reveries</p>
+      <div class="scroll-hint" aria-hidden="true">Latest Entries</div>
+    </main>
+
+    <!-- Right column: nav -->
+    <nav class="side-nav side-nav--right">
+      <ul>
+        <li><a href="Commonplace/commonplace.html" class="nav-link">Commonplace</a></li>
+        <li><a href="Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+        <li><a href="Generators/generators.html" class="nav-link">Generators</a></li>
+        <li><a href="Garden/garden.html" class="nav-link">Garden</a></li>
+        <li><a href="Recipes/recipes.html" class="nav-link">Recipes</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!-- Mobile: hamburger button -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile: full-screen nav overlay -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="About/about.html" class="nav-link">About</a></li>
+      <li><a href="Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+      <li><a href="Reviews/reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      <li><a href="Commonplace/commonplace.html" class="nav-link">Commonplace</a></li>
+      <li><a href="Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+      <li><a href="Generators/generators.html" class="nav-link">Generators</a></li>
+      <li><a href="Garden/garden.html" class="nav-link">Garden</a></li>
+      <li><a href="Recipes/recipes.html" class="nav-link">Recipes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Entries section -->
+  <section class="entries">
+    <header class="entries__header">
+      <span class="entries__label">From the Forest</span>
+      <h2 class="entries__title">Latest Entries</h2>
+      <span class="entries__divider"></span>
+    </header>
+
+    <div class="cards">
+
+      <a href="Reviews/reviews.html" class="card">
+        <div class="card__image">
+          <svg class="card__image-placeholder" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0d2318"/>
+                <stop offset="100%" stop-color="#1a3a28"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#g1)"/>
+            <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="64" fill="rgba(232,212,138,0.18)">✦</text>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Review</span>
+          <h3 class="card__title">Crown of Midnight</h3>
+          <p class="card__excerpt">The Attack of the Clones of the Thrones of Glass series.</p>
+          <time class="card__date">May 2026</time>
+        </div>
+      </a>
+
+      <a href="Poetry/poetry.html" class="card">
+        <div class="card__image">
+          <svg class="card__image-placeholder" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1a1208"/>
+                <stop offset="100%" stop-color="#2e200e"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#g2)"/>
+            <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="64" fill="rgba(232,212,138,0.18)">✦</text>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Poetry</span>
+          <h3 class="card__title">Earthlight</h3>
+          <p class="card__excerpt">A new poem/chant from one navelgazer to another.</p>
+          <time class="card__date">April 2026</time>
+        </div>
+      </a>
+
+      <a href="Moodboards/moodboards.html" class="card">
+        <div class="card__image">
+          <svg class="card__image-placeholder" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0e1a24"/>
+                <stop offset="100%" stop-color="#1a2e3c"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#g3)"/>
+            <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="64" fill="rgba(232,212,138,0.18)">✦</text>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Moodboard</span>
+          <h3 class="card__title">Kikimora</h3>
+          <p class="card__excerpt">Swamp hag, domesticated.</p>
+          <time class="card__date">March 2026</time>
+        </div>
+      </a>
+
+      <a href="Commonplace/commonplace.html" class="card">
+        <div class="card__image">
+          <svg class="card__image-placeholder" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1a0e18"/>
+                <stop offset="100%" stop-color="#2e1a2c"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="400" fill="url(#g4)"/>
+            <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="serif" font-size="64" fill="rgba(232,212,138,0.18)">✦</text>
+          </svg>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Commonplace</span>
+          <h3 class="card__title">Solarpunk</h3>
+          <p class="card__excerpt">The gritty optimism our changing world needs.</p>
+          <time class="card__date">May 2026</time>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SVG filter: rough/distressed edges on title -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="rough" x="-5%" y="-10%" width="110%" height="130%">
+        <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="4" seed="8" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>

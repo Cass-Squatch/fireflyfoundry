@@ -1,0 +1,155 @@
+/* ─── Color palette ──────────────────────────────────
+   Adjust these variables to re-theme the whole page.
+──────────────────────────────────────────────────── */
+body.commonplace-page {
+  --cp-bg:         #221f19;   /* deep cognac brown */
+  --cp-parchment:  #e0d4b8;   /* warm ivory */
+  --cp-green:      #a3ad8b;   /* muted olive */
+  --cp-orange:     #d4b898;   /* #ddb898 */
+  --cp-text:       #2a1206;   /* dark brown for card text */
+  --cp-muted:      #6a3e1a;   /* medium brown for attribution */
+  --cp-tag:        #8a4414;   /* terracotta for tags */
+  --cp-note:       #5a3218;   /* slightly lighter brown for personal notes */
+}
+
+/* ─── Suppress global background image ─── */
+
+body.commonplace-page .page-grid {
+  background-image: url(../images/notebook_hannah-murrell.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body.commonplace-page::before,
+body.commonplace-page::after {
+  display: none;
+}
+
+body.commonplace-page {
+  background-color: var(--cp-bg);
+}
+
+body.commonplace-page .subpage-content {
+  background: var(--cp-bg);
+}
+
+
+/* ════════════════════════════
+   FILTER BAR
+════════════════════════════ */
+
+.cp-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(240, 200, 140, 0.15);
+}
+
+.cp-filter-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: rgba(240, 200, 150, 0.55);
+  padding: 0.2rem 0.3rem;
+  transition: color 0.2s;
+}
+
+.cp-filter-btn:hover {
+  color: rgba(240, 200, 150, 0.9);
+}
+
+.cp-filter-btn.active {
+  color: rgba(240, 200, 150, 0.95);
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+/* ════════════════════════════
+   MASONRY GRID
+════════════════════════════ */
+
+.cp-grid {
+  column-count: 3;
+  column-gap: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .cp-grid { column-count: 2; }
+}
+
+@media (max-width: 560px) {
+  .cp-grid { column-count: 1; }
+}
+
+
+/* ════════════════════════════
+   CARDS
+════════════════════════════ */
+
+.cp-card {
+  break-inside: avoid;
+  margin-bottom: 1.4rem;
+  padding: 1.4rem 1.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.cp-card--parchment { background: var(--cp-parchment); }
+.cp-card--green     { background: var(--cp-green); }
+.cp-card--orange    { background: var(--cp-orange); }
+
+
+/* ════════════════════════════
+   CARD CONTENT
+════════════════════════════ */
+
+.cp-tag {
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cp-tag);
+  font-weight: 400;
+}
+
+.cp-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--cp-text);
+  line-height: 1.7;
+  margin: 0;
+  quotes: none;
+}
+
+.cp-source {
+  font-size: 0.75rem;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: var(--cp-muted);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.cp-source em {
+  font-style: italic;
+}
+
+.cp-note {
+  font-size: 0.85rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cp-note);
+  line-height: 1.6;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(90, 50, 24, 0.2);
+}

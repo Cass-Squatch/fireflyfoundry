@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf — The Firefly Foundry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="page-grid page-grid--subpage">
+
+    <nav class="side-nav">
+      <ul>
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../About/about.html" class="nav-link">About</a></li>
+        <li><a href="../Bookshelf/bookshelf.html" class="nav-link active">Bookshelf</a></li>
+        <li><a href="../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      </ul>
+    </nav>
+
+    <header class="subpage-hero">
+      <p class="site-name"><a href="../index.html">The Firefly Foundry</a></p>
+      <h1 class="subpage-title">Bookshelf</h1>
+    </header>
+
+    <nav class="side-nav side-nav--right">
+      <ul>
+        <li><a href="../Commonplace/commonplace.html" class="nav-link">Commonplace Book</a></li>
+        <li><a href="../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+        <li><a href="../Generators/generators.html" class="nav-link">Generators</a></li>
+        <li><a href="../Garden/garden.html" class="nav-link">Garden</a></li>
+        <li><a href="../Recipes/recipes.html" class="nav-link">Recipes</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner">
+
+      <section class="bookshelf">
+        <div class="bookshelf__header">
+          <p class="subpage-placeholder">My entire home library, at my fingertips and yours.</p>
+          <p class="bookshelf__count" id="bookCount">Loading books...</p>
+        </div>
+
+        <form class="bookshelf-controls" id="bookshelfControls">
+          <label class="bookshelf-field">
+            <span>Search</span>
+            <input type="search" id="bookSearch" placeholder="Title, author, tag, or note">
+          </label>
+
+          <label class="bookshelf-field">
+            <span>Status</span>
+            <select id="statusFilter">
+              <option value="">All statuses</option>
+            </select>
+          </label>
+
+          <label class="bookshelf-field">
+            <span>Genre</span>
+            <select id="genreFilter">
+              <option value="">All genres</option>
+            </select>
+          </label>
+
+          <label class="bookshelf-field">
+            <span>Rating</span>
+            <select id="ratingFilter">
+              <option value="">All ratings</option>
+            </select>
+          </label>
+
+
+
+          <button class="bookshelf-reset" type="reset">Clear</button>
+        </form>
+
+        <div class="bookshelf-results" id="bookResults" aria-live="polite"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="../About/about.html" class="nav-link">About</a></li>
+      <li><a href="../Bookshelf/bookshelf.html" class="nav-link active">Bookshelf</a></li>
+      <li><a href="../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      <li><a href="../Commonplace/commonplace.html" class="nav-link">Commonplace Book</a></li>
+      <li><a href="../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+      <li><a href="../Generators/generators.html" class="nav-link">Generators</a></li>
+      <li><a href="../Garden/garden.html" class="nav-link">Garden</a></li>
+      <li><a href="../Recipes/recipes.html" class="nav-link">Recipes</a></li>
+    </ul>
+  </nav>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="rough" x="-5%" y="-10%" width="110%" height="130%">
+        <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="4" seed="8" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="../script.js"></script>
+  <script src="bookshelf.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes — The Firefly Foundry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="recipes.css">
+</head>
+<body class="recipes-page">
+
+  <div class="page-grid page-grid--subpage">
+
+    <nav class="side-nav">
+      <ul>
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../About/about.html" class="nav-link">About</a></li>
+        <li><a href="../Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+        <li><a href="../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      </ul>
+    </nav>
+
+    <header class="subpage-hero">
+      <p class="site-name"><a href="../index.html">The Firefly Foundry</a></p>
+      <h1 class="subpage-title">Recipes</h1>
+    </header>
+
+    <nav class="side-nav side-nav--right">
+      <ul>
+        <li><a href="../Commonplace/commonplace.html" class="nav-link">Commonplace Book</a></li>
+        <li><a href="../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+        <li><a href="../Generators/generators.html" class="nav-link">Generators</a></li>
+        <li><a href="../Garden/garden.html" class="nav-link">Garden</a></li>
+        <li><a href="../Recipes/recipes.html" class="nav-link active">Recipes</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner">
+
+      <p class="subpage-placeholder">Impressive-sounding recipes for lazy people.</p>
+
+      <div class="sort-bar">
+        <div class="sort-bar__filters">
+          <button class="sort-btn active" data-filter="all">All</button>
+          <button class="sort-btn" data-filter="baking">Baking</button>
+          <button class="sort-btn" data-filter="salads">Salads</button>
+          <button class="sort-btn" data-filter="mains">Mains</button>
+          <button class="sort-btn" data-filter="sides">Sides</button>
+          <button class="sort-btn" data-filter="drinks">Drinks</button>
+        </div>
+        <div class="sort-bar__sort">
+          <button class="sort-btn active" data-sort="title">A–Z</button>
+        </div>
+      </div>
+
+      <div class="recipe-grid" id="recipe-grid">
+
+        <a href="entries/pumpkin-pie.html" class="recipe-card" data-category="baking" data-title="Pumpkin Pie with Graham Cracker Crust">
+          <div class="recipe-card__body">
+            <span class="recipe-card__tag">Baking</span>
+            <h2 class="recipe-card__title">Pumpkin Pie with Graham Cracker Crust</h2>
+            <p class="recipe-card__desc">A pie for those who want to double down on the pumpkin spice.</p>
+            <p class="recipe-card__meta">45 min &middot; Intermediate</p>
+          </div>
+        </a>
+
+        <a href="entries/summer-tomato-salads.html" class="recipe-card" data-category="salads" data-title="3 Summer Tomato Salads">
+          <div class="recipe-card__body">
+            <span class="recipe-card__tag">Salads</span>
+            <h2 class="recipe-card__title">3 Summer Tomato Salads</h2>
+            <p class="recipe-card__desc">Got too many tomatoes? I can help.</p>
+            <p class="recipe-card__meta">1 hr &middot; Easy</p>
+          </div>
+        </a>
+
+        <a href="entries/smoky-chili.html" class="recipe-card" data-category="mains" data-title="Smoky Chili">
+          <div class="recipe-card__body">
+            <span class="recipe-card__tag">Mains</span>
+            <h2 class="recipe-card__title">Smoky Chili</h2>
+            <p class="recipe-card__desc">A little Texan, a little Midwestern, and a lot smoky.</p>
+            <p class="recipe-card__meta">8 hrs &middot; Intermediate</p>
+          </div>
+        </a>
+
+        <a href="entries/instant-pot-rice.html" class="recipe-card" data-category="sides" data-title="Foolproof Instant Pot Rice">
+          <div class="recipe-card__body">
+            <span class="recipe-card__tag">Sides</span>
+            <h2 class="recipe-card__title">Foolproof Instant Pot Rice</h2>
+            <p class="recipe-card__desc">This is mostly for my husband, who thinks I'm a rice wizard.</p>
+            <p class="recipe-card__meta">20 min &middot; Easy</p>
+          </div>
+        </a>
+
+        <a href="entries/boxed-cornbread.html" class="recipe-card" data-category="baking" data-title="Boxed Cornbread, Two Ways">
+          <div class="recipe-card__body">
+            <span class="recipe-card__tag">Baking</span>
+            <h2 class="recipe-card__title">Boxed Cornbread, Two Ways</h2>
+            <p class="recipe-card__desc">Who needs to make it from scratch? A sweet upgrade for breakfast, and a hearty one for supper.</p>
+            <p class="recipe-card__meta">45 min &middot; Easy</p>
+          </div>
+        </a>
+
+        <a href="entries/potions.html" class="recipe-card" data-category="drinks" data-title="Potions!">
+          <div class="recipe-card__body">
+            <span class="recipe-card__tag">Drinks</span>
+            <h2 class="recipe-card__title">Potions!</h2>
+            <p class="recipe-card__desc">Real life stamina, health, and mana potions for your hypermobile friends.</p>
+            <p class="recipe-card__meta">5 min &middot; Easy</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="../About/about.html" class="nav-link">About</a></li>
+      <li><a href="../Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+      <li><a href="../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      <li><a href="../Commonplace/commonplace.html" class="nav-link">Commonplace Book</a></li>
+      <li><a href="../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+      <li><a href="../Generators/generators.html" class="nav-link">Generators</a></li>
+      <li><a href="../Garden/garden.html" class="nav-link">Garden</a></li>
+      <li><a href="../Recipes/recipes.html" class="nav-link active">Recipes</a></li>
+    </ul>
+  </nav>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="rough" x="-5%" y="-10%" width="110%" height="130%">
+        <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="4" seed="8" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="../script.js"></script>
+  <script src="recipes.js"></script>
+</body>
+</html>

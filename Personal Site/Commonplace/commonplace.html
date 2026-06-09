@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commonplace Book — The Firefly Foundry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jacquard+24&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="commonplace.css">
+</head>
+<body class="commonplace-page">
+
+  <div class="page-grid page-grid--subpage">
+
+    <nav class="side-nav">
+      <ul>
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../About/about.html" class="nav-link">About</a></li>
+        <li><a href="../Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+        <li><a href="../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      </ul>
+    </nav>
+
+    <header class="subpage-hero">
+      <p class="site-name"><a href="../index.html">The Firefly Foundry</a></p>
+      <h1 class="subpage-title">Commonplace Book</h1>
+    </header>
+
+    <nav class="side-nav side-nav--right">
+      <ul>
+        <li><a href="../Commonplace/commonplace.html" class="nav-link active">Commonplace Book</a></li>
+        <li><a href="../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+        <li><a href="../Generators/generators.html" class="nav-link">Generators</a></li>
+        <li><a href="../Garden/garden.html" class="nav-link">Garden</a></li>
+        <li><a href="../Recipes/recipes.html" class="nav-link">Recipes</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <main class="subpage-content">
+    <div class="subpage-content__inner">
+
+      <p class="subpage-placeholder">This is all filler at the moment.</p>
+
+      <div class="cp-filter-bar">
+        <button class="cp-filter-btn active" data-filter="all">All</button>
+        <button class="cp-filter-btn" data-filter="quote">Quotes</button>
+        <button class="cp-filter-btn" data-filter="fact">Facts</button>
+        <button class="cp-filter-btn" data-filter="essay">Essays</button>
+        <button class="cp-filter-btn" data-filter="article">Articles</button>
+      </div>
+
+      <div class="cp-grid" id="cp-grid">
+
+        <article class="cp-card cp-card--parchment" data-type="quote">
+          <span class="cp-tag">Facts</span>
+          <blockquote class="cp-quote">Dogs like the smell of blueberries, blackberries, mint, rose, lavender, and linalool.</blockquote>
+          <cite class="cp-source">Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC9219509/</cite>
+        </article>
+
+        <article class="cp-card cp-card--green" data-type="quote">
+          <span class="cp-tag">Lorem ipsum</span>
+          <blockquote class="cp-quote">"dolor sit amet, consectetur adipiscing elit."</blockquote>
+          <cite class="cp-source">Socrates, <em>Apology</em></cite>
+          <p class="cp-note">Etiam eleifend viverra condimentum.</p>
+        </article>
+
+        <article class="cp-card cp-card--orange" data-type="quote">
+          <span class="cp-tag">Pellentesque luctus</span>
+          <blockquote class="cp-quote">"dictum lectus, sit amet imperdiet nisl porta vel."</blockquote>
+          <cite class="cp-source">Phasellus tincidunt fringilla lacus, <em>ut vulputate purus.</em></cite>
+        </article>
+
+        <article class="cp-card cp-card--parchment" data-type="quote">
+          <blockquote class="cp-quote">"Donec urna dui, vestibulum ut augue eget, mattis egestas ante. Morbi id quam eu libero auctor elementum. Nam vel libero suscipit, elementum ipsum at, convallis nisi. Nam bibendum mi tellus, at scelerisque quam blandit id."</blockquote>
+          <cite class="cp-source">Morbi suscipit</cite>
+          <p class="cp-note">euismod ante quis dignissim.</p>
+        </article>
+
+        <article class="cp-card cp-card--orange" data-type="quote">
+          <span class="cp-tag">Mauris eu ipsum</span>
+          <blockquote class="cp-quote">"sed risus porta efficitur. Nunc convallis massa luctus libero dignissim, at bibendum mauris interdum."</blockquote>
+          <cite class="cp-source">Integer aliquam</cite>
+        </article>
+
+        <article class="cp-card cp-card--green" data-type="quote">
+          <blockquote class="cp-quote">"rhoncus urna, posuere venenatis nisl semper at."</blockquote>
+          <cite class="cp-source">Fusce maximus, <em>ut felis ut porta</em></cite>
+        </article>
+
+        <article class="cp-card cp-card--parchment" data-type="quote">
+          <span class="cp-tag">Fusce</span>
+          <blockquote class="cp-quote">" iaculis quis arcu nec pretium.."</blockquote>
+          <cite class="cp-source">Phasellus mollis <em>non lorem eu interdum</em></cite>
+        </article>
+
+        <article class="cp-card cp-card--green" data-type="quote">
+          <span class="cp-tag">Donec quis</span>
+          <blockquote class="cp-quote">"tincidunt ligula. Nunc quis viverra diam."</blockquote>
+          <cite class="cp-source">Nullam eget auctor, <em>magna, auctor posuere tortor</em></cite>
+          <p class="cp-note">Sed placerat enim vel leo scelerisque.</p>
+        </article>
+
+        <article class="cp-card cp-card--orange" data-type="quote">
+          <span class="cp-tag">Mauris ornare</span>
+          <blockquote class="cp-quote">"arcu nibh, sodales suscipit nisi dignissim vitae. Donec ultricies quam aliquam ipsum tincidunt elementum."</blockquote>
+          <cite class="cp-source">Ut turpis neque, <em>ultrices quis pulvinar et,</em></cite>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="../About/about.html" class="nav-link">About</a></li>
+      <li><a href="../Bookshelf/bookshelf.html" class="nav-link">Bookshelf</a></li>
+      <li><a href="../Reviews/reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="../Poetry/poetry.html" class="nav-link">Poetry</a></li>
+      <li><a href="../Commonplace/commonplace.html" class="nav-link active">Commonplace Book</a></li>
+      <li><a href="../Moodboards/moodboards.html" class="nav-link">Moodboards</a></li>
+      <li><a href="../Generators/generators.html" class="nav-link">Generators</a></li>
+      <li><a href="../Garden/garden.html" class="nav-link">Garden</a></li>
+      <li><a href="../Recipes/recipes.html" class="nav-link">Recipes</a></li>
+    </ul>
+  </nav>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="rough" x="-5%" y="-10%" width="110%" height="130%">
+        <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="4" seed="8" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="../script.js"></script>
+  <script src="commonplace.js"></script>
+</body>
+</html>
